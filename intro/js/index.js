@@ -29,6 +29,22 @@ operation((a,b) => {
 
 //foreach
 
+//for each este metodo es inmutable ya que no cambia a nuestro array
+
 const names = ['Hector', 'Juan', 'Pablo'];
 
 names.forEach((item)=> console.log(item));
+names.forEach((item)=> console.log(item.toUpperCase()));
+
+//metodo map
+
+const namesUper = names.map((item ) => item.toUpperCase())
+console.log(namesUper);
+
+//reduce metodo
+const numeros = [5,4,7,1,10]
+
+const total = numeros.reduce((ac, item) => {
+    return ac + item;
+},0)
+console.log(total);
